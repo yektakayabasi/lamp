@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+    <nav>
+    <img src="images/menu.png" class="menu-img"  alt="">
+    <img src="images/logo.png" class="logo"      alt="">
+ <ul>
+<li><a href="">Latest</a></li>
+<li><a href="">Modern</a></li>
+<li><a href="">Contemporary</a></li>
+<li><a href="">Affordable</a></li>
+</ul>
+<button type="button" class="btn" id="btn1" onclick="toggleBtn()"><span></span></button>
+</nav>
+
+<div class="lamp-container">
+<img src="images/lamp.png" alt="This is a lamp" class="lamp">
+<img src="images/light.png" alt="This is a light" class="light" id="light">
+
+</div>
+<div class="text-container">
+    <h1>Latest <br> in lighting </h1>
+    <p>Last technologies</p> <br><br>
+    <a href="" class="a1">Check all collection</a>
+</div>
+
+</div>
+</div>
+<script>
+var btn=document.getElementById("btn1");
+var light=document.getElementById("light");
+
+function toggleBtn(){
+    btn.classList.toggle("active")
+    light.classList.toggle("on")
+
+}
+</script>
+</body>
+</html>

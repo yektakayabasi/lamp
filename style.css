@@ -1,0 +1,111 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family:'poppins', sans-serif;
+}
+.hero{
+    background-color: lightcoral;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav .menu-img{
+    cursor: pointer;
+    width: 25px;
+    margin-right: 20px;
+}
+nav .logo{
+    cursor: pointer;
+    width: 160px;
+    margin-right: 20px;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    background: #efefef;
+    width: 60px; ;
+    height: 30px;
+    border-radius: 60px ;
+    outline: 0px;
+    border: 0px;
+    cursor: grab;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s margin-left 0.5s;
+}
+.lamp-container{
+position: absolute;
+top: -20px;
+left: 22%;
+width: 200px;
+}
+.lamp{
+    width: 100%;
+
+}
+.light{
+   position: absolute;
+   top: 97%;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-left: -10px;
+   transition: opacity 0.5s;
+   opacity: 0;
+}
+.text-container{
+    margin-top: 7%;
+    margin-left: 50%;
+    max-width: 600px;
+   
+}
+h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+.a1{
+    text-decoration: none;
+    background: palegreen;
+    padding: 14px 20px;
+    display: inline-block;
+    color: rgb(196, 21, 21);
+    border-radius: 40px;
+
+}
+.active{
+    background: green;
+}
+.active span{
+background: #fff;
+margin-left: 31px;
+}
+.on{
+    opacity: 1;
+}
+ul li a:hover{
+    color: powderblue;
+}
